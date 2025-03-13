@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="750.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="309.0" prefWidth="1160.0">
+      <children>
+         <ListView fx:id="listView" prefHeight="310.0" prefWidth="783.0" />
+         <ListView fx:id="listViewRapoarte" prefHeight="100.0" prefWidth="625.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="231.0" prefWidth="1110.0">
+      <children>
+         <VBox prefHeight="129.0" prefWidth="120.0">
+            <children>
+               <Label text="Pacienti" />
+               <TextField fx:id="idPacientiTextField" promptText="Id Pacient" />
+               <Separator prefHeight="22.0" prefWidth="120.0" />
+               <TextField fx:id="numePacientTextField" promptText="Nume pacient" />
+               <Separator prefHeight="25.0" prefWidth="120.0" />
+               <TextField fx:id="prenumePacientTextField" promptText="Prenume Pacient" />
+               <Separator prefHeight="25.0" prefWidth="120.0" />
+               <TextField fx:id="varstaPacientTextField" promptText="Varsta Pacient" />
+            </children>
+         </VBox>
+         <VBox prefHeight="231.0" prefWidth="116.0">
+            <children>
+               <Separator prefHeight="42.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onAdaugaPacientButtonClick" prefHeight="26.0" prefWidth="154.0" text="Adauga Pacient" />
+               <Separator prefHeight="22.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onModificaPacientButtonClick" prefHeight="26.0" prefWidth="124.0" text="Modifica Pacient" />
+               <Separator prefHeight="27.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onStergePacientButtonClick" prefHeight="26.0" prefWidth="189.0" text="Sterge Pacient" />
+               <Separator prefHeight="24.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onAfiseazaPacientiiButtonClick" prefHeight="26.0" prefWidth="149.0" text="Afieseaza Pacientii" />
+            </children></VBox>
+         <VBox prefHeight="195.0" prefWidth="165.0">
+            <children>
+               <Label text="Programari" />
+               <TextField fx:id="idProgramareTextField" promptText="Id Programare" />
+               <Separator prefHeight="23.0" prefWidth="166.0" />
+               <TextField fx:id="idPacientTextField" promptText="Id Pacient" />
+               <Separator prefHeight="25.0" prefWidth="166.0" />
+               <TextField fx:id="dataProgramareTextField" promptText="Data(DD/MM/YYYY HH:MM)" />
+               <Separator prefHeight="25.0" prefWidth="166.0" />
+               <TextField fx:id="scopProgramareTextField" promptText="Scopul Programarii" />
+            </children>
+         </VBox>
+         <VBox layoutX="130.0" layoutY="10.0" prefHeight="231.0" prefWidth="136.0">
+            <children>
+               <Separator prefHeight="42.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onAdaugaProgramareButtonClick" prefHeight="26.0" prefWidth="147.0" text="Adauga Programare" />
+               <Separator prefHeight="22.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onModificaProgramareButtonClick" prefHeight="26.0" prefWidth="161.0" text="Modifica Programare" />
+               <Separator prefHeight="27.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onStergeProgramareButtonClick" prefHeight="26.0" prefWidth="172.0" text="Sterge Programare" />
+               <Separator prefHeight="24.0" prefWidth="104.0" />
+               <Button mnemonicParsing="false" onAction="#onAfiseazaProgramarileButtonClick" prefHeight="26.0" prefWidth="168.0" text="Afiseaza Programarile" />
+            </children>
+         </VBox>
+         <Separator orientation="VERTICAL" prefHeight="231.0" prefWidth="250.0" />
+         <VBox prefHeight="231.0" prefWidth="370.0">
+            <children>
+               <Label prefHeight="18.0" prefWidth="52.0" text="Rapoarte" />
+               <Separator prefHeight="22.0" prefWidth="370.0" />
+               <Button mnemonicParsing="false" onAction="#onRaport1ButtonClick" text="Numar de programari pentru fiecare pacient " />
+               <Separator prefHeight="23.0" prefWidth="370.0" />
+               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onRaport2ButtonClick" text="Numărul total de programări pentru fiecare lună a anului" />
+               <Separator prefHeight="28.0" prefWidth="370.0" />
+               <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#onRaport3ButtonClick" text="Numărul de zile trecute de la ultima programare a fiecărui pacient" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <DialogPane fx:id="dialogPane" />
+</VBox>

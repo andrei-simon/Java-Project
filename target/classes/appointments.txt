@@ -1,0 +1,5 @@
+1;5;Ionescu;Ana;67;12/11/2023 14:00;Control
+2;2;Ionescu;Maria;45;03/07/2023 15:30;Operatie
+3;4;Popa;Mihai;56;02/03/2023 11:00;Control
+4;3;Georgescu;Vasile;34;22/05/2023 10:30;Plomba
+5;1;Popescu;Ion;23;17/10/2023 18:00;Plomba
